@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="1028.0" stylesheets="@../grayTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uk.ac.aber.cs221.gp16.java.controllers.practice.PracticeController">
+   <children>
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="52.0" prefWidth="1028.0" text="PRACTICE MENU" textAlignment="CENTER" AnchorPane.bottomAnchor="460.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <HBox layoutX="20.0" layoutY="52.0" prefHeight="460.0" prefWidth="1028.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="52.0">
+         <children>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="460.0" prefWidth="250.0">
+               <children>
+                  <Button fx:id="goToDictionary" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goToDictionary" prefHeight="100.0" prefWidth="156.0" text="GO TO DICTIONARY" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets top="2.0" />
+                     </VBox.margin></Button>
+                  <Button fx:id="goToFlashcards" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goToFlashcards" prefHeight="100.0" prefWidth="156.0" text="FLASHCARDS" VBox.vgrow="ALWAYS" />
+                  <Button fx:id="goToTest" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goToTest" prefHeight="100.0" prefWidth="156.0" text="TEST YOURSELF" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+            <VBox prefHeight="460.0" prefWidth="779.0">
+               <children>
+                  <TableView fx:id="tableViewDictionary" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#update" prefHeight="442.0" prefWidth="0.0" stylesheets="@../grayTheme.css" VBox.vgrow="ALWAYS">
+                     <columns>
+                        <TableColumn fx:id="englishColumn" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="389.0" text="English" />
+                        <TableColumn fx:id="welshColumn" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="389.0" text="Welsh" />
+                     </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

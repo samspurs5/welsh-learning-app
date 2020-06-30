@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="1024.0" stylesheets="@../grayTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uk.ac.aber.cs221.gp16.java.controllers.practice.tests.MultipleChoiceTestController">
+    <children>
+        <VBox layoutX="83.0" layoutY="36.0" prefHeight="512.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                      <Label fx:id="questionLabel" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="94.0" prefWidth="1034.0" text="QUESTION ">
+                          <font>
+                              <Font size="32.0" />
+                          </font>
+                      </Label>
+                  <Label fx:id="score" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="97.0" prefWidth="211.0" text="0/1">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+                <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="335.0" prefWidth="1024.0" VBox.vgrow="ALWAYS">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <RadioButton fx:id="answerRadioButtonOne" mnemonicParsing="false" onAction="#updateAnswer1" text="ANSWER 1" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="256.0" />
+                            </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="answerRadioButtonTwo" mnemonicParsing="false" onAction="#updateAnswer2" text="ANSWER 2" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="128.0" />
+                            </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="answerRadioButtonThree" mnemonicParsing="false" onAction="#updateAnswer3" text="ANSWER 3" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="256.0" />
+                            </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="answerRadioButtonFive" mnemonicParsing="false" onAction="#updateAnswer5" text="ANSWER 5" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="256.0" />
+                            </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="answerRadioButtonSix" mnemonicParsing="false" onAction="#updateAnswer6" text="ANSWER 6" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="128.0" />
+                            </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="answerRadioButtonFour" mnemonicParsing="false" onAction="#updateAnswer4" text="ANSWER 4" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="128.0" />
+                            </GridPane.margin>
+                        </RadioButton>
+                    </children>
+                </GridPane>
+                <HBox prefHeight="87.0" prefWidth="1024.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Button fx:id="continueButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#continueTest" prefHeight="87.0" prefWidth="1024.0" text="CHECK ANSWER" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font size="21.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

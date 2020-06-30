@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="1024.0" stylesheets="@../grayTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uk.ac.aber.cs221.gp16.java.controllers.practice.FlashcardController">
+    <children>
+        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="512.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button fx:id="flashcard" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#flipFlashcard" prefHeight="520.0" prefWidth="824.0" VBox.vgrow="ALWAYS">
+                    <font>
+                        <Font name="System Bold" size="52.0" />
+                    </font>
+                    <graphic>
+                        <Label alignment="TOP_LEFT" prefHeight="41.0" prefWidth="75.0" text="Click to flip">
+                            <padding>
+                                <Insets top="20.0" />
+                            </padding>
+                        </Label>
+                    </graphic>
+                </Button>
+                <HBox prefHeight="180.0" prefWidth="1024.0">
+                    <children>
+                        <Button fx:id="previousButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showPreviousFlashcard" prefHeight="100.0" prefWidth="100.0" text="PREVIOUS" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font size="21.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="goToPractice" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goToPractice" prefHeight="100.0" prefWidth="100.0" text="BACK TO MENU" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font size="21.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="nextButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showNextFlashcard" prefHeight="100.0" prefWidth="100.0" text="NEXT" HBox.hgrow="ALWAYS">
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                            <font>
+                                <Font size="21.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
